@@ -87,9 +87,15 @@
                     $("<td width='25%'>" + info[i].artist + "</td>").appendTo(str);
 
                     // Comment
-                    $("<td width='40%'>" + info[i].comment + "</td>").appendTo(str);
+                    $("<td width='30%'>" + info[i].comment + "</td>").appendTo(str);
                     str.appendTo(obj);
                     count++;
+                    
+                    // Ribbit
+                    $("<td width='10%'>" +
+                        "<a href='http://www.ribbit.xyz/bms/score/view?md5=" + info[
+                            i]
+                        .md5 + "' target='_blank'>" + "link" + "</a></td>").appendTo(str);
 
                 }
                 $("</tbody>").appendTo(obj);
