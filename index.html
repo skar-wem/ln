@@ -75,7 +75,7 @@
                     var str = $("<tr></tr>");
 
                     // Level
-                    $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
+                    $("<td width='3%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title
                     $("<td width='30%'>" +
@@ -87,12 +87,12 @@
                     $("<td width='25%'>" + info[i].artist + "</td>").appendTo(str);
 
                     // Comment
-                    $("<td width='35%'>" + info[i].comment + "</td>").appendTo(str);
+                    $("<td width='40%'>" + info[i].comment + "</td>").appendTo(str);
                     str.appendTo(obj);
                     count++;
                     
                     // Score
-                    $("<td width='5%' style='text-align:center'>" +
+                    $("<td width='2%' style='text-align:center'>" +
                         "<a href='http://www.ribbit.xyz/bms/score/view?md5=" + info[
                             i]
                         .md5 + "' target='_blank'>" + "&#9835" + "</a></td>").appendTo(str);
