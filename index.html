@@ -26,7 +26,7 @@
 
     <div class="container-fluid">
 
-        <div class="alert alert-primary mb-3" role="alert">
+        <div class="alert alert-dark mb-3" role="alert">
             <p>穴抜き色々</p>
             <p>Collection of curtain and inverse charts for beginners.</p>
             <p>The table is currently in development.</p>
@@ -37,7 +37,7 @@
 
         <!--ここから難易度表本体-->
         <div>
-            <table class="table table-light table-hover table-bordered table-sm" id="table_int">
+            <table class="table table-secondary table-hover table-bordered table-sm" id="table_int">
             </table>
         </div>
         <script language="javascript" type="text/javascript">
@@ -56,7 +56,7 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-info'><tr><th>Level</th><th>Title</th><th>Artist</th><th>Comment</th><th>&#9835</th></tr></thead><tbody>")
+                $("<thead class='table-info'><tr><th>Level</th><th>Title</th><th>Artist</th><th>Comment</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
